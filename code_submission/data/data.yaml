@@ -1,0 +1,5 @@
+path: /Users/leolau/Desktop/oriented_object/Oriented/code_submission/data
+train: images/train
+val: images/val
+names:
+  0: ship
