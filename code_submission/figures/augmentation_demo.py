@@ -1,7 +1,4 @@
-"""Before/after visualization of every data augmentation we use (copy-paste omitted),
-on the clearest single-ship image, with the OBB redrawn after each geometric transform.
-Saves figures/augmentation_demo.png .
-"""
+# 数据增强代码
 import os, math, cv2, numpy as np
 import sys
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -10,8 +7,6 @@ import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 
-# NOTE: this script needs the ORIGINAL 5-value labels "cx cy w h theta", not the
-# 9-value YOLO-OBB polygons under data/labels (those would be misread as boxes).
 IMG_DIR, LBL_DIR = paths.IMG_TRAIN, paths.RAW_LBL
 EXTS = ('.jpg', '.jpeg', '.png')
 GREEN = (60, 220, 60)

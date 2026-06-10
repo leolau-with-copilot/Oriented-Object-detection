@@ -1,12 +1,4 @@
-"""Download + unzip ShipRSImageNet from HuggingFace, the correct way.
-
-WHY NOT load_dataset(): that ZIP is a raw archive blob, not a schema'd HF dataset.
-`load_dataset(data_files="X.zip")` tries to decode every zip member as an image and
-crashes on the annotation files (UnidentifiedImageError). Just fetch the file.
-
-Needs ~9.5 GB free (4.6 GB zip + ~4.6 GB extracted). Run where there's room
-(ideally the GPU box, not a near-full laptop). hf_hub_download resumes if interrupted.
-"""
+# 下载shiprsimagenet数据集
 import os
 import sys
 import zipfile
